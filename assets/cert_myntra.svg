@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient - Hot Pink Modern Theme -->
+    <linearGradient id="bg-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="50%" stop-color="#db2777" />
+      <stop offset="100%" stop-color="#9d174d" />
+    </linearGradient>
+
+    <!-- White Inner Board Shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+
+    <linearGradient id="text-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#db2777" />
+      <stop offset="100%" stop-color="#be185d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background hot pink -->
+  <rect width="800" height="600" fill="url(#bg-pink)" />
+
+  <!-- Decorative hanger vector background path (subtle) -->
+  <path d="M 620 40 L 640 10 L 660 40 M 600 40 L 680 40 L 670 70 L 610 70 Z" fill="#ffffff" opacity="0.08" transform="scale(1.2) translate(-50, 0)" />
+  <circle cx="120" cy="150" r="45" fill="#ffffff" opacity="0.06" />
+  <polygon points="680,180 700,210 660,210" fill="#ffffff" opacity="0.07" />
+
+  <!-- Inner Card (White) -->
+  <rect x="80" y="80" width="640" height="440" rx="24" fill="#ffffff" filter="url(#shadow)" />
+
+  <!-- Logo Header Centered Top of Card -->
+  <g transform="translate(400, 75)">
+    <circle cx="0" cy="0" r="44" fill="#ffffff" filter="url(#shadow)" />
+    <!-- Naukri logo placeholder & Myntra M logo mock -->
+    <!-- Naukri title -->
+    <text x="0" y="-18" font-family="'Inter', sans-serif" font-size="8" font-weight="800" fill="#0056b3" text-anchor="middle">naukri</text>
+    <text x="0" y="-8" font-family="'Outfit', sans-serif" font-size="9" font-weight="900" fill="#e25c84" text-anchor="middle">campus</text>
+    <text x="0" y="2" font-family="'Inter', sans-serif" font-size="7" font-weight="600" fill="#64748b" text-anchor="middle">&amp;</text>
+    <!-- Myntra red-orange M -->
+    <path d="M -16 28 L -10 13 L -4 20 L 2 13 L 8 28 Z" fill="none" stroke="#db2777" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" />
+    <text x="0" y="38" font-family="'Outfit', sans-serif" font-size="7" font-weight="900" fill="#334155" text-anchor="middle">Myntra</text>
+  </g>
+
+  <!-- Certificate Heading -->
+  <text x="400" y="195" font-family="'Outfit', 'Inter', sans-serif" font-size="28" font-weight="800" fill="url(#text-pink)" text-anchor="middle" letter-spacing="1">
+    CERTIFICATE OF PARTICIPATION
+  </text>
+  <text x="400" y="222" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#64748b" text-anchor="middle">
+    This is to certify that
+  </text>
+
+  <!-- Recipient Name -->
+  <text x="400" y="275" font-family="'Outfit', 'Inter', sans-serif" font-size="26" font-weight="700" fill="#1e293b" text-anchor="middle">
+    BONAMUKKALA AJAY
+  </text>
+  <line x1="200" y1="288" x2="600" y2="288" stroke="#e2e8f0" stroke-width="1.5" />
+
+  <!-- Description Body -->
+  <text x="400" y="325" font-family="'Inter', sans-serif" font-size="14" fill="#475569" text-anchor="middle">
+    has successfully attended and appeared for the quiz titled
+  </text>
+  <text x="400" y="352" font-family="'Outfit', 'Inter', sans-serif" font-size="16" font-weight="700" fill="#db2777" text-anchor="middle">
+    Get Real With Myntra
+  </text>
+  <text x="400" y="378" font-family="'Inter', sans-serif" font-size="14" fill="#475569" text-anchor="middle">
+    conducted by Myntra, in collaboration with Naukri Campus.
+  </text>
+
+  <!-- Signatures and Details -->
+  <!-- Left Issued Date -->
+  <text x="140" y="445" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#64748b">Issued on</text>
+  <text x="140" y="470" font-family="'Outfit', 'Inter', sans-serif" font-size="13" font-weight="700" fill="#1e293b">2026-04-27</text>
+  <line x1="140" y1="480" x2="250" y2="480" stroke="#cbd5e1" stroke-width="1" />
+
+  <!-- Sparkle motif -->
+  <path d="M 120 250 L 125 240 L 130 250 L 125 260 Z" fill="#db2777" transform="scale(1.5) translate(-40, -40)" />
+
+  <!-- Right Signature CHRO Myntra -->
+  <text x="590" y="468" font-family="'Brush Script MT', cursive, sans-serif" font-size="18" fill="#be185d" text-anchor="middle">Govindraj M K</text>
+  <text x="590" y="482" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#1e293b" text-anchor="middle">Govindraj M K</text>
+  <text x="590" y="495" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">CHRO, Myntra</text>
+  <line x1="535" y1="455" x2="645" y2="455" stroke="#cbd5e1" stroke-width="1" />
+
+  <!-- Certificate ID Header -->
+  <text x="140" y="145" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">
+    Certificate ID: 69f897cdf92ccd13b549f9fd
+  </text>
+
+</svg>

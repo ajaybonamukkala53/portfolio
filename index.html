@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajay Bonamukkala | Full Stack & Data Science Portfolio</title>
+  <meta name="description" content="Professional portfolio of Ajay Bonamukkala - Computer Science & Data Science Student. Showcasing Full Stack Development and Machine Learning expertise. Ready for opportunities.">
+  <meta name="keywords" content="Portfolio, Ajay Bonamukkala, Data Science, Full Stack Developer, MERN, Python, Machine Learning Portfolio, AI Engineer">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+  
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Glowing Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <span class="logo-accent">&lt;</span>Ajay<span class="logo-accent">.Bonamukkala /&gt;</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Controls: Theme Toggle & Mobile Menu Btn -->
+      <div class="header-controls">
+        <button id="theme-toggle" class="control-btn" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        
+        <button id="menu-btn" class="control-btn mobile-menu-btn" aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">Open for Internships &amp; Roles</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Ajay Bonamukkala</span>
+          </h1>
+          <h2 class="hero-subtitle">Software Engineer &amp; Data Science Student</h2>
+          <p class="hero-desc">
+            Passionate about building scalable AI-powered applications, solving real-world engineering challenges, and writing clean, full-stack code. Skilled in Java, Python, React, Node.js, and Machine Learning.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              View My Work <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button id="cv-download-btn" class="btn btn-secondary">
+              Download CV <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+          <div class="social-links-list">
+            <a href="https://github.com/ajaybonamukkala53" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ajaybonamukkala/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://leetcode.com" target="_blank" rel="noopener" class="social-icon" aria-label="LeetCode"><i class="fa-code-branch fa-solid"></i></a>
+            <a href="mailto:ajaybonamukkala53@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <div class="hero-photo-wrapper">
+          <div class="photo-border-glow">
+            <img src="assets/profile.jpg" alt="Ajay Bonamukkala Portrait" class="profile-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="section-container">
+        <span class="section-tag">Overview</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-underline"></div>
+        
+        <div class="about-grid">
+          <div class="about-text-card glass-card">
+            <h3>My Focus</h3>
+            <p>
+              I am a Computer Science (Data Science) student with a strong foundation in modern web architectures and intelligent systems. I enjoy bridging the gap between responsive backend APIs and data-driven machine learning models.
+            </p>
+            <p>
+              Having worked across full-stack development using the MERN stack and Python (Flask), as well as implementing predictive data pipelines using Pandas, NumPy, and Scikit-learn, I bring a versatile technical approach to software engineering.
+            </p>
+            
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">9.34</span>
+                <span class="stat-label">B.Tech CGPA</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Internships</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">150+</span>
+                <span class="stat-label">Leetcode Problems</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-details-card glass-card">
+            <h3>Achievements &amp; Highlights</h3>
+            <ul class="achievements-list">
+              <li>
+                <div class="achievement-icon-wrapper">
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                  <h4>NPTEL Elite + Gold (Top 5%)</h4>
+                  <p>Scored 92% in the national-level certification exam for Data Mining.</p>
+                </div>
+              </li>
+              <li>
+                <div class="achievement-icon-wrapper">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div>
+                  <h4>Problem Solver</h4>
+                  <p>Solved 150+ algorithmic coding challenges covering Core Data Structures &amp; Algorithms.</p>
+                </div>
+              </li>
+              <li>
+                <div class="achievement-icon-wrapper">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div>
+                  <h4>Project Creator</h4>
+                  <p>Built end-to-end full-stack applications and analytics tools using the MERN Stack, Python, and Machine Learning libraries.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey (Education & Work Experience) Section -->
+    <section id="journey" class="journey-section scroll-reveal">
+      <div class="section-container">
+        <span class="section-tag">Timeline</span>
+        <h2 class="section-title">Academic &amp; Professional Journey</h2>
+        <div class="section-underline"></div>
+        
+        <div class="journey-grid">
+          <!-- Work Experience Column -->
+          <div class="timeline-column glass-card">
+            <div class="column-header">
+              <i class="fa-solid fa-briefcase column-icon"></i>
+              <h3>Work Experience</h3>
+            </div>
+            <ul class="journey-timeline">
+              <li>
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Jan 2026 - Present</span>
+                <h4 class="timeline-title">MERN Full Stack Developer Intern</h4>
+                <p class="timeline-subtitle">AICTE (Remote)</p>
+                <p class="timeline-desc">
+                  Designed and developed <strong>ShopSphere</strong>, a full-stack e-commerce platform. Implemented secure JWT authentication, role-based authorization, Redux Toolkit, RESTful APIs, and MongoDB integrations. Optimized responsive UIs with React and Tailwind CSS.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">May 2025 - Jul 2025</span>
+                <h4 class="timeline-title">AI &amp; Data Science Intern</h4>
+                <p class="timeline-subtitle">Edu Tantr (Remote)</p>
+                <p class="timeline-desc">
+                  Completed a 3-month internship focused on AI, ML, and Data Science. Utilized Python, Pandas, NumPy, and Scikit-learn for dataset preprocessing, visualization, and predictive modeling.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Apr 2025 - Jun 2025</span>
+                <h4 class="timeline-title">Python Full Stack Developer Intern</h4>
+                <p class="timeline-subtitle">AICTE (Remote)</p>
+                <p class="timeline-desc">
+                  Gained practical experience developing full-stack web applications using Python, HTML, CSS, JavaScript, SQL, and Flask. Constructed backend logic and handled REST APIs and database connections.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-column glass-card">
+            <div class="column-header">
+              <i class="fa-solid fa-graduation-cap column-icon"></i>
+              <h3>Education</h3>
+            </div>
+            <ul class="journey-timeline">
+              <li>
+                <div class="timeline-dot text-primary-dot"></div>
+                <span class="timeline-date">Aug 2023 - Present</span>
+                <h4 class="timeline-title">B.Tech in Computer Science &amp; Eng. (Data Science)</h4>
+                <p class="timeline-subtitle">RVR &amp; JC College of Engineering</p>
+                <p class="timeline-desc">
+                  <strong>CGPA: 9.34 / 10</strong>. Diving deep into Data Science core concepts, database management systems, algorithms, operating systems, and computer networks.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Jun 2021 - Mar 2023</span>
+                <h4 class="timeline-title">Intermediate (MPC)</h4>
+                <p class="timeline-subtitle">Krishna Chaitanya Junior College</p>
+                <p class="timeline-desc">
+                  <strong>Score: 979 / 1000</strong>. Advanced study of Mathematics, Physics, and Chemistry.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+      <div class="section-container">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-underline"></div>
+        
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <i class="fa-solid fa-terminal category-icon"></i>
+              <h3>Languages</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Python</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Java</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>SQL (MySQL / PostgreSQL)</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>JavaScript</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 82%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <i class="fa-solid fa-globe category-icon"></i>
+              <h3>Full Stack Web</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>React.js &amp; Redux Toolkit</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Node.js / Express.js</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Flask (Python Backend)</span>
+                  <span>78%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 78%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>HTML5 / CSS3 / Tailwind CSS</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 92%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science & Core Engineering -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <i class="fa-solid fa-chart-line category-icon"></i>
+              <h3>Data Science &amp; Core</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>ML (Scikit-learn, Predictive Model)</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Data Libraries (Pandas, NumPy)</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Data Structures &amp; Algorithms</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Databases (MongoDB, SQL)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar" style="width: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-reveal">
+      <div class="section-container">
+        <span class="section-tag">Showcase</span>
+        <h2 class="section-title">My Projects</h2>
+        <div class="section-underline"></div>
+        
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+          <button class="filter-btn" data-filter="ai-ds">AI &amp; Data Science</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: ShopSphere -->
+          <article class="project-card glass-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="assets/project1.svg" alt="ShopSphere E-Commerce Layout" class="project-img">
+              <div class="project-overlay">
+                <a href="https://shopsphere-4-fllc.onrender.com/" target="_blank" rel="noopener" class="overlay-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/ajaybonamukkala53/shopsphere" target="_blank" rel="noopener" class="overlay-link" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-tag">Fullstack</span>
+              <h3>ShopSphere E-Commerce</h3>
+              <p>
+                A scalable, full-stack e-commerce marketplace incorporating role-based authorization, JWT secure credentials, shopping cart management, products search, wishlists, and administrative analytics dashboards.
+              </p>
+              <div class="project-tags">
+                <span>MongoDB</span>
+                <span>Express</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Tailwind CSS</span>
+                <span>Redux Toolkit</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project: ChatBox Real-Time Chat -->
+          <article class="project-card glass-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="assets/project1.svg" alt="ChatBox Layout" class="project-img">
+              <div class="project-overlay">
+                <a href="https://chatboxis-3.onrender.com/" target="_blank" rel="noopener" class="overlay-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/ajaybonamukkala53/chatboxis" target="_blank" rel="noopener" class="overlay-link" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-tag">Fullstack</span>
+              <h3>ChatBox Real-Time Chat</h3>
+              <p>
+                A real-time messaging application with instant delivery, live online users counter, customizable join/leave alerts, and a fully responsive layout. Built with WebSockets for bi-directional communication.
+              </p>
+              <div class="project-tags">
+                <span>React.js</span>
+                <span>Express</span>
+                <span>Node.js</span>
+                <span>Socket.IO</span>
+                <span>CSS3</span>
+                <span>Render</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project: AI Cyber Dashboard -->
+          <article class="project-card glass-card" data-category="ai-ds">
+            <div class="project-img-wrapper">
+              <img src="assets/project2.svg" alt="AI Cyber Dashboard Preview" class="project-img">
+              <div class="project-overlay">
+                <a href="https://chatbot-3-kp6c.onrender.com/" target="_blank" rel="noopener" class="overlay-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/ajaybonamukkala53/chatbot" target="_blank" rel="noopener" class="overlay-link" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-tag">AI &amp; Data Science</span>
+              <h3>AI Cyber Dashboard</h3>
+              <p>
+                An interactive cybersecurity command dashboard featuring an AI assistant powered by Groq API. Includes a threat intelligence scanner simulation, real-time system visualization, and persistent chat history.
+              </p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Groq API</span>
+                <span>Node.js</span>
+                <span>Express</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Crime Intelligence Monitoring System -->
+          <article class="project-card glass-card" data-category="ai-ds">
+            <div class="project-img-wrapper">
+              <img src="assets/project2.svg" alt="Crime Intelligence Monitoring Screen" class="project-img">
+              <div class="project-overlay">
+                <a href="https://crime-news-analysis-system-1.onrender.com/" target="_blank" rel="noopener" class="overlay-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/ajaybonamukkala53/crime-news-analysis-system" target="_blank" rel="noopener" class="overlay-link" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-tag">AI &amp; Data Science</span>
+              <h3>Crime Intelligence Monitor</h3>
+              <p>
+                An AI-driven threat monitoring platform parsing live intelligence articles. Implements NLP algorithms for multilingual parsing, district-based crime class modeling, keyword indexing, and PDF analytical summaries.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>NLP</span>
+                <span>APIs</span>
+                <span>Pandas</span>
+                <span>Data Viz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Open Weather 2025 -->
+          <article class="project-card glass-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="assets/project3.svg" alt="Open Weather 2025 dashboard preview" class="project-img">
+              <div class="project-overlay">
+                <a href="https://open-weather-2025.netlify.app" target="_blank" rel="noopener" class="overlay-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/ajaybonamukkala53/weather" target="_blank" rel="noopener" class="overlay-link" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-tag">Fullstack</span>
+              <h3>Open Weather 2025</h3>
+              <p>
+                A polished weather dashboard that provides current conditions, forecasts, and location-based insights with a modern responsive UI and real-time data integration.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>API</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- View More on GitHub Button -->
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="https://github.com/ajaybonamukkala53" target="_blank" rel="noopener" class="btn btn-secondary">
+            View More Projects on GitHub <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section scroll-reveal">
+      <div class="section-container">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-underline"></div>
+        
+        <div class="certificates-grid">
+          <!-- Cert 1: NPTEL Data Mining -->
+          <div class="cert-card glass-card" data-cert="assets/cert_nptel.png">
+            <div class="cert-img-container">
+              <img src="assets/cert_nptel.png" alt="NPTEL Data Mining Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>NPTEL Elite + Gold (Top 5%)</h3>
+              <span class="cert-issuer">Issued by IIT Kharagpur / NPTEL</span>
+              <span class="cert-date">Score: 92% | Data Mining</span>
+            </div>
+          </div>
+
+          <!-- Cert 2: NPTEL Joy of Computing using Python -->
+          <div class="cert-card glass-card" data-cert="assets/cert_nptel_python.png">
+            <div class="cert-img-container">
+              <img src="assets/cert_nptel_python.png" alt="NPTEL Joy of Computing using Python Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>NPTEL Elite + Silver</h3>
+              <span class="cert-issuer">Issued by IIT Madras / NPTEL</span>
+              <span class="cert-date">Score: 84% | The Joy of Computing using Python</span>
+            </div>
+          </div>
+
+          <!-- Cert 3: NPTEL Cloud Computing -->
+          <div class="cert-card glass-card" data-cert="assets/cert_nptel_cloud.png">
+            <div class="cert-img-container">
+              <img src="assets/cert_nptel_cloud.png" alt="NPTEL Cloud Computing Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>NPTEL Elite Certification</h3>
+              <span class="cert-issuer">Issued by IIT Kharagpur / NPTEL</span>
+              <span class="cert-date">Score: 66% | Cloud Computing</span>
+            </div>
+          </div>
+
+          <!-- Cert 4: AICTE MERN Stack -->
+          <div class="cert-card glass-card" data-cert="assets/cert_aicte_mern.png">
+            <div class="cert-img-container">
+              <img src="assets/cert_aicte_mern.png" alt="AICTE MERN Stack Virtual Internship Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>MERN Full Stack Developer Intern</h3>
+              <span class="cert-issuer">Issued by AICTE &amp; EduSkills</span>
+              <span class="cert-date">Grade: E (Outstanding) | 8-Week Virtual Internship</span>
+            </div>
+          </div>
+
+          <!-- Cert 5: AICTE Python Full Stack -->
+          <div class="cert-card glass-card" data-cert="assets/cert_aicte_python.png">
+            <div class="cert-img-container">
+              <img src="assets/cert_aicte_python.png" alt="AICTE Python Virtual Internship Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>Python Full Stack Developer Intern</h3>
+              <span class="cert-issuer">Issued by AICTE &amp; EduSkills</span>
+              <span class="cert-date">Grade: P (Pass) | 10-Week Virtual Internship</span>
+            </div>
+          </div>
+
+          <!-- Cert 6: Oracle AI Foundations Associate -->
+          <div class="cert-card glass-card" data-cert="assets/cert_oracle_ai.svg">
+            <div class="cert-img-container">
+              <img src="assets/cert_oracle_ai.svg" alt="Oracle Certified AI Foundations Associate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>Certified AI Foundations Associate</h3>
+              <span class="cert-issuer">Issued by Oracle University</span>
+              <span class="cert-date">OCI Certified AI Foundations | 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 7: Oracle Data Science -->
+          <div class="cert-card glass-card" data-cert="assets/cert_oracle.svg">
+            <div class="cert-img-container">
+              <img src="assets/cert_oracle.svg" alt="Oracle Certified Data Science Professional" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>Certified Data Science Professional</h3>
+              <span class="cert-issuer">Issued by Oracle Corporation</span>
+              <span class="cert-date">Oracle Cloud Infrastructure</span>
+            </div>
+          </div>
+
+          <!-- Cert 8: Edu Tantr AI/DS Internship -->
+          <div class="cert-card glass-card" data-cert="assets/cert_edutantr.jpg">
+            <div class="cert-img-container">
+              <img src="assets/cert_edutantr.jpg" alt="Edu Tantr AI &amp; DS Internship Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>AI &amp; Data Science Internship</h3>
+              <span class="cert-issuer">Issued by Edu Tantr Academy</span>
+              <span class="cert-date">3-Month Internship Certificate</span>
+            </div>
+          </div>
+
+          <!-- Cert 9: Edu Tantr AI/DS Course -->
+          <div class="cert-card glass-card" data-cert="assets/cert_edutantr_course.jpg">
+            <div class="cert-img-container">
+              <img src="assets/cert_edutantr_course.jpg" alt="Edu Tantr AI &amp; DS Course Completion Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>AI &amp; Data Science Course</h3>
+              <span class="cert-issuer">Issued by Edu Tantr Academy</span>
+              <span class="cert-date">Course Completion Certificate</span>
+            </div>
+          </div>
+
+          <!-- Cert 10: PowerBI Workshop -->
+          <div class="cert-card glass-card" data-cert="assets/cert_powerbi.jpg">
+            <div class="cert-img-container">
+              <img src="assets/cert_powerbi.jpg" alt="OfficeMaster PowerBI Workshop Completion Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>PowerBI Workshop Completion</h3>
+              <span class="cert-issuer">Issued by OfficeMaster</span>
+              <span class="cert-date">AI-Powered Interactive Dashboard</span>
+            </div>
+          </div>
+
+          <!-- Cert 11: Naukri & Myntra Quiz -->
+          <div class="cert-card glass-card" data-cert="assets/cert_myntra.jpg">
+            <div class="cert-img-container">
+              <img src="assets/cert_myntra.jpg" alt="Naukri Campus &amp; Myntra Quiz Participation Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>Get Real With Myntra Quiz</h3>
+              <span class="cert-issuer">Issued by Naukri Campus &amp; Myntra</span>
+              <span class="cert-date">Quiz Participation Certificate</span>
+            </div>
+          </div>
+
+          <!-- Cert 12: Naukri Campus BrandQuezt -->
+          <div class="cert-card glass-card" data-cert="assets/cert_naukri.svg">
+            <div class="cert-img-container">
+              <img src="assets/cert_naukri.svg" alt="Naukri Campus BrandQuezt Participation Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>BrandQuezt #32: Festive Branding</h3>
+              <span class="cert-issuer">Issued by Naukri Campus</span>
+              <span class="cert-date">BrandQuezt #32 | Participation</span>
+            </div>
+          </div>
+
+          <!-- Cert 13: ICAT Aptitude Test -->
+          <div class="cert-card glass-card" data-cert="assets/cert_icat.jpg">
+            <div class="cert-img-container">
+              <img src="assets/cert_icat.jpg" alt="ICAT Internship Common Aptitude Test Participation Certificate" class="cert-thumbnail">
+              <div class="cert-hover-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>View Certificate</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h3>Internship Common Aptitude Test</h3>
+              <span class="cert-issuer">Issued by ICAT Program</span>
+              <span class="cert-date">Certificate of Participation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="section-container">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-underline"></div>
+        
+        <div class="contact-grid">
+          <!-- Info Details -->
+          <div class="contact-info-card glass-card">
+            <h3>Let's build something intelligent together</h3>
+            <p>
+              I am actively seeking software engineering internships, backend full-time positions, or data analyst roles. If you have an exciting project or opportunity, reach out!
+            </p>
+            
+            <div class="info-items">
+              <div class="info-item">
+                <i class="fa-solid fa-envelope info-icon"></i>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:ajaybonamukkala53@gmail.com" class="info-link">ajaybonamukkala53@gmail.com</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-phone info-icon"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+917207039202" class="info-link">+91 72070 39202</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot info-icon"></i>
+                <div>
+                  <h4>Location</h4>
+                  <span class="info-text">Guntur, Andhra Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Form -->
+          <form class="contact-form glass-card" id="contact-form" action="#" method="POST" novalidate>
+            <h3>Send a Message</h3>
+            
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <span class="error-msg" id="name-error">Please enter your name</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+              <span class="error-msg" id="email-error">Please enter a valid email</span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrapper">
+                <textarea id="message" name="message" rows="5" placeholder="Hi Ajay, I'd love to chat about..." required></textarea>
+              </div>
+              <span class="error-msg" id="message-error">Message cannot be empty</span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Ajay Bonamukkala. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Certificates -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate Lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Full-size Certificate Preview">
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

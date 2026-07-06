@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Light Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fdfdfd" />
+    </linearGradient>
+
+    <!-- Gold Accents -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="50%" stop-color="#f3e5ab" />
+      <stop offset="100%" stop-color="#aa7c11" />
+    </linearGradient>
+
+    <!-- Yellow Ribbon Accent -->
+    <linearGradient id="yellow-ribbon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#fde047" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="800" height="600" fill="url(#bg-grad)" />
+
+  <!-- Double Gold Borders -->
+  <rect x="20" y="20" width="760" height="560" rx="6" fill="none" stroke="url(#gold-grad)" stroke-width="6" />
+  <rect x="28" y="28" width="744" height="544" rx="4" fill="none" stroke="#22252a" stroke-width="1.5" />
+
+  <!-- OfficeMaster Brand Header Logo Left side -->
+  <g transform="translate(65, 60)">
+    <rect width="36" height="36" rx="8" fill="#10b981" />
+    <!-- QM Letters inside green box -->
+    <text x="18" y="23" font-family="'Outfit', sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">OM</text>
+    <text x="48" y="23" font-family="'Outfit', 'Inter', sans-serif" font-size="18" font-weight="800" fill="#1e293b">OfficeMaster</text>
+  </g>
+
+  <!-- Certificate Central Headers -->
+  <text x="65" y="180" font-family="'Outfit', 'Inter', sans-serif" font-size="44" font-weight="900" fill="#0f172a" letter-spacing="-1px">
+    Certificate
+  </text>
+  <text x="65" y="210" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#475569" letter-spacing="1">
+    OF COMPLETION AWARDED TO
+  </text>
+
+  <!-- Recipient Name -->
+  <text x="65" y="275" font-family="'Outfit', 'Inter', sans-serif" font-size="34" font-weight="800" fill="#0f172a">
+    AJAY BONAMUKKALA
+  </text>
+  <line x1="65" y1="290" x2="480" y2="290" stroke="#cbd5e1" stroke-width="2" />
+
+  <!-- Details Description -->
+  <text x="65" y="325" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#475569">
+    on successful completion of PowerBI workshop
+  </text>
+  <text x="65" y="348" font-family="'Inter', sans-serif" font-size="12" fill="#64748b" width="400">
+    Holder of this certificate can create AI-Powered
+  </text>
+  <text x="65" y="368" font-family="'Inter', sans-serif" font-size="12" fill="#64748b" width="400">
+    interactive dashboards in PowerBI in under 30 mins
+  </text>
+
+  <!-- Signatures -->
+  <!-- Left Co-founder -->
+  <line x1="65" y1="465" x2="200" y2="465" stroke="#94a3b8" stroke-width="1" />
+  <!-- Signature text simulated -->
+  <text x="132" y="450" font-family="'Brush Script MT', cursive, sans-serif" font-size="18" fill="#aa7c11" text-anchor="middle">Aditya Goenka</text>
+  <text x="132" y="482" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#475569" text-anchor="middle">Aditya Goenka</text>
+  <text x="132" y="495" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Co-founder</text>
+
+  <!-- Right Co-founder -->
+  <line x1="260" y1="465" x2="395" y2="465" stroke="#94a3b8" stroke-width="1" />
+  <text x="327" y="450" font-family="'Brush Script MT', cursive, sans-serif" font-size="18" fill="#aa7c11" text-anchor="middle">Aditya Kachave</text>
+  <text x="327" y="482" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#475569" text-anchor="middle">Aditya Kachave</text>
+  <text x="327" y="495" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Co-founder</text>
+
+  <!-- Yellow Ribbon Banner on Right -->
+  <g transform="translate(565, 30)">
+    <!-- Ribbon shape -->
+    <path d="M 0 0 L 170 0 L 170 420 L 85 380 L 0 420 Z" fill="url(#yellow-ribbon)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.15))" />
+    <path d="M 0 0 L 170 0 L 170 420 L 85 380 L 0 420 Z" fill="none" stroke="url(#gold-grad)" stroke-width="1.5" />
+    
+    <!-- Title inside ribbon -->
+    <text x="85" y="55" font-family="'Outfit', 'Inter', sans-serif" font-size="18" font-weight="900" fill="#1e293b" text-anchor="middle">PowerBI</text>
+    <text x="85" y="78" font-family="'Outfit', 'Inter', sans-serif" font-size="18" font-weight="900" fill="#1e293b" text-anchor="middle">Workshop</text>
+
+    <!-- Verified Badge Seal -->
+    <g transform="translate(85, 175)">
+      <circle cx="0" cy="0" r="38" fill="#ffffff" stroke="url(#gold-grad)" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="34" fill="none" stroke="#fef08a" stroke-width="3" stroke-dasharray="4 2" />
+      <!-- Small gold chart shape inside badge -->
+      <rect x="-12" y="-5" width="6" height="20" fill="#eab308" />
+      <rect x="-3" y="-12" width="6" height="27" fill="#eab308" />
+      <rect x="6" y="-19" width="6" height="34" fill="#eab308" />
+      <text x="0" y="28" font-family="'Outfit', sans-serif" font-size="7" font-weight="900" fill="#1e293b" text-anchor="middle">Verified</text>
+    </g>
+
+    <!-- Date inside Ribbon -->
+    <text x="85" y="325" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">Issued on:</text>
+    <text x="85" y="345" font-family="'Outfit', 'Inter', sans-serif" font-size="12" font-weight="800" fill="#1e293b" text-anchor="middle">September 14th, 2025</text>
+  </g>
+
+  <!-- QR Code Mockup in Bottom Right -->
+  <g transform="translate(660, 470)">
+    <rect width="65" height="65" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Simulated QR pixels grid -->
+    <rect x="5" y="5" width="16" height="16" fill="#1e293b" />
+    <rect x="8" y="8" width="10" height="10" fill="#ffffff" />
+    <rect x="44" y="5" width="16" height="16" fill="#1e293b" />
+    <rect x="47" y="8" width="10" height="10" fill="#ffffff" />
+    <rect x="5" y="44" width="16" height="16" fill="#1e293b" />
+    <rect x="8" y="47" width="10" height="10" fill="#ffffff" />
+    <!-- Random bits -->
+    <rect x="25" y="10" width="6" height="6" fill="#1e293b" />
+    <rect x="35" y="15" width="6" height="6" fill="#1e293b" />
+    <rect x="25" y="25" width="12" height="6" fill="#1e293b" />
+    <rect x="15" y="35" width="6" height="12" fill="#1e293b" />
+    <rect x="30" y="35" width="12" height="12" fill="#1e293b" />
+    <rect x="48" y="30" width="10" height="10" fill="#1e293b" />
+    <rect x="48" y="48" width="8" height="8" fill="#1e293b" />
+  </g>
+
+</svg>
